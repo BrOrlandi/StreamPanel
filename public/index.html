@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Stream Panel</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="assets/materialize/dist/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <link rel="shortcut icon" href="image/icon.png" type="image/x-icon">
+</head>
+<body ng-app="streamPanelApp" ng-controller="mainController" class="blue-grey lighten-4">
+  <nav class="indigo darken-4" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo center">Stream Panel #{{hashtag}}</a>
+    </div>
+  </nav>
+
+  <div class="main container">
+  
+  <ng-include src="'partials/instagramStream.html'"></ng-include>
+
+  </div>
+
+  <footer class="page-footer indigo darken-4">
+    <div class="footer-copyright">
+      <div class="container">
+      Developed by <a class="indigo-text text-lighten-3" href="https://github.com/brorlandi">Bruno Orlandi</a>
+      </div>
+    </div>
+  </footer>
+
+  <!--  Scripts-->
+  <script src="assets/jquery/dist/jquery.min.js"></script>
+  <script src="assets/materialize/dist/js/materialize.min.js"></script>
+  <script src="assets/angular/angular.min.js"></script>
+  <script src="assets/angular-socket-io/socket.min.js"></script>
+
+  <script src="/socket.io/socket.io.js"></script>
+
+  <script src="js/main.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,5 @@
+public/css/*
+public/js/*
+public/assets/*
+node_modules/
+*.js

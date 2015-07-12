@@ -1,0 +1,21 @@
+{
+  "name": "StreamPanel",
+  "version": "1.0.0",
+  "authors": [
+    "BrOrlandi <brorlandi@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "~0.97.0",
+    "jquery": "~2.1.4",
+    "angular": "~1.4.2",
+    "angular-socket-io": "~0.7.0"
+  }
+}
