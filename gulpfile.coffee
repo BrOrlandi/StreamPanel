@@ -41,10 +41,11 @@ gulp.task 'styles', ['clean_styles'], ->
     config.outputStyle = 'compressed' if isProd
 
     gulp.src paths.styles
-        .pipe plumber()
+        .pipe plumber (error)->
+            console.error error.message
+            this.emit 'end'
         .pipe sass config
         .pipe gulp.dest outputDir + '/css'
-
 
 gulp.task 'server', ->
     gulp.src paths.server

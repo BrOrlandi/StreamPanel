@@ -1,10 +1,59 @@
-.main{ 
-    padding: 20px 0px;
+
+.col{
+    width: 100%;
+    padding: 0px;
 }
 
 footer.page-footer {
     bottom: 0px;
-    position: absolute;
+    left: 0px;
+    position: fixed;
     width: 100%;
     padding-top: 0px;
+}
+
+// instagram photos
+
+figure, figcaption{ /*add any other html5 elements*/
+    display:block;
+}
+
+#polaroid{
+    /*setting a width and adding overflow:hidden will clear the floats we're going to apply to figure*/
+    width:100%;
+    overflow:hidden;
+    display: flex;
+    flex-direction: row;
+    box-pack: center;
+    justify-content: center;
+    box-align: center;  
+    align-items: center;
+}
+
+#polaroid figure{
+float: left; /*places the images in a horizontal line*/
+position:relative; /*allows precise positioning of the tape in step 5- see support section below for more info*/
+width:300px; /* width of the images*/
+margin:5px 5px; /*space between the images*/
+}
+
+#polaroid figure{
+padding: 6px 8px 10px 8px; /*size of the frame*/
+/*give the frame's background colour a gradient*/
+background: #eee6d8; /*fallback colour for browsers that don't support gradients*/
+background: -webkit-linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+background: -moz-linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+background: -o-linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+background: -ms-linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+background: linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+/*give the Polaroids a small drop shadow*/
+box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, .75);
+}
+
+#polaroid figcaption{
+text-align: center;
+font-family: 'Reenie Beanie', cursive; /* Reenie Beanie is available through Google Webfonts */
+font-size:1.3em;
+color: #454f40;
+letter-spacing: 0.09em;
 }

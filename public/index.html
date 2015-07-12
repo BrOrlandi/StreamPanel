@@ -7,23 +7,46 @@
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Reenie+Beanie" rel="stylesheet">
   <link href="assets/materialize/dist/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
   <link rel="shortcut icon" href="image/icon.png" type="image/x-icon">
 </head>
 <body ng-app="streamPanelApp" ng-controller="mainController" class="blue-grey lighten-4">
-  <nav class="indigo darken-4" role="navigation">
+<div id="wrapper">
+  <nav id="navbar" class="indigo darken-4" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo center">Stream Panel #{{hashtag}}</a>
     </div>
   </nav>
-
-  <div class="main container">
-  
-  <ng-include src="'partials/instagramStream.html'"></ng-include>
-
+  <div id="main">
+  <div>
+  <div class="row">
+    <div class="col smart-col center">
+      <ng-include src="'partials/instagramStream.html'"></ng-include>
+    </div>
+    <div class="col smart-col center">
+    <div class="section">
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at erat congue orci finibus consectetur quis suscipit mauris. Aenean eget tempus erat. Mauris porttitor dolor et sapien lacinia, id interdum est dictum. Duis at scelerisque dui. Duis tempus eros neque, eget feugiat magna consequat vitae. Aenean lacinia dolor nulla, a sagittis purus finibus ut. Pellentesque et lectus leo. Sed congue non ipsum sed lacinia. Duis vestibulum ligula magna, ut ornare nibh fringilla ac. Donec vel metus id nibh dictum congue et convallis nulla. Donec in nulla non neque commodo auctor et non leo. Nulla eu mi urna. Fusce consequat justo at neque rutrum, eget pretium purus mollis.
+    </p><p>
+Quisque malesuada odio non enim vulputate convallis. Nunc laoreet euismod quam, sed eleifend enim rhoncus ut. Nullam ac velit laoreet, ultrices eros sit amet, convallis diam. Integer dapibus est purus. Maecenas et pellentesque dui. Duis interdum, sem vel aliquam rutrum, lectus orci sodales dolor, non cursus eros lectus et nunc. Phasellus quis pellentesque mauris. Vestibulum finibus sapien a faucibus commodo. Proin mi leo, varius quis porta vel, finibus maximus nisi. Vestibulum non commodo turpis, eget sagittis enim. Fusce at molestie sem, in convallis urna. Donec in tincidunt elit. Vivamus a turpis id enim aliquam ullamcorper. Vivamus magna purus, viverra sit amet erat vitae, elementum semper ante.
+    </p>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at erat congue orci finibus consectetur quis suscipit mauris. Aenean eget tempus erat. Mauris porttitor dolor et sapien lacinia, id interdum est dictum. Duis at scelerisque dui. Duis tempus eros neque, eget feugiat magna consequat vitae. Aenean lacinia dolor nulla, a sagittis purus finibus ut. Pellentesque et lectus leo. Sed congue non ipsum sed lacinia. Duis vestibulum ligula magna, ut ornare nibh fringilla ac. Donec vel metus id nibh dictum congue et convallis nulla. Donec in nulla non neque commodo auctor et non leo. Nulla eu mi urna. Fusce consequat justo at neque rutrum, eget pretium purus mollis.
+    </p><p>
+Quisque malesuada odio non enim vulputate convallis. Nunc laoreet euismod quam, sed eleifend enim rhoncus ut. Nullam ac velit laoreet, ultrices eros sit amet, convallis diam. Integer dapibus est purus. Maecenas et pellentesque dui. Duis interdum, sem vel aliquam rutrum, lectus orci sodales dolor, non cursus eros lectus et nunc. Phasellus quis pellentesque mauris. Vestibulum finibus sapien a faucibus commodo. Proin mi leo, varius quis porta vel, finibus maximus nisi. Vestibulum non commodo turpis, eget sagittis enim. Fusce at molestie sem, in convallis urna. Donec in tincidunt elit. Vivamus a turpis id enim aliquam ullamcorper. Vivamus magna purus, viverra sit amet erat vitae, elementum semper ante.
+    </p>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at erat congue orci finibus consectetur quis suscipit mauris. Aenean eget tempus erat. Mauris porttitor dolor et sapien lacinia, id interdum est dictum. Duis at scelerisque dui. Duis tempus eros neque, eget feugiat magna consequat vitae. Aenean lacinia dolor nulla, a sagittis purus finibus ut. Pellentesque et lectus leo. Sed congue non ipsum sed lacinia. Duis vestibulum ligula magna, ut ornare nibh fringilla ac. Donec vel metus id nibh dictum congue et convallis nulla. Donec in nulla non neque commodo auctor et non leo. Nulla eu mi urna. Fusce consequat justo at neque rutrum, eget pretium purus mollis.
+    </p><p>
+Quisque malesuada odio non enim vulputate convallis. Nunc laoreet euismod quam, sed eleifend enim rhoncus ut. Nullam ac velit laoreet, ultrices eros sit amet, convallis diam. Integer dapibus est purus. Maecenas et pellentesque dui. Duis interdum, sem vel aliquam rutrum, lectus orci sodales dolor, non cursus eros lectus et nunc. Phasellus quis pellentesque mauris. Vestibulum finibus sapien a faucibus commodo. Proin mi leo, varius quis porta vel, finibus maximus nisi. Vestibulum non commodo turpis, eget sagittis enim. Fusce at molestie sem, in convallis urna. Donec in tincidunt elit. Vivamus a turpis id enim aliquam ullamcorper. Vivamus magna purus, viverra sit amet erat vitae, elementum semper ante.
+    </p>
+    </div>
+    </div>
   </div>
-
+  </div>
+  </div>
   <footer class="page-footer indigo darken-4">
     <div class="footer-copyright">
       <div class="container">
@@ -31,7 +54,7 @@
       </div>
     </div>
   </footer>
-
+</div>
   <!--  Scripts-->
   <script src="assets/jquery/dist/jquery.min.js"></script>
   <script src="assets/materialize/dist/js/materialize.min.js"></script>

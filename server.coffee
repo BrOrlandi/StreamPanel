@@ -24,9 +24,8 @@ io.on 'connection', (socket)->
         console.log "Data sent by client: #{data}"
         socket.emit 'callClient','you called Server'
 
-
-io.on 'disconnect', (socket)->
-    console.log "Socket disconnected #{socket.id}"
+    socket.on 'disconnect', (socket)->
+        console.log "Socket disconnected #{socket.id}"
 
 app.use bodyParser.json()  # for parsing application/json
 app.use bodyParser.urlencoded extended: true  # for parsing application/x-www-form-urlencoded
