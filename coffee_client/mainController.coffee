@@ -9,7 +9,7 @@ app.controller 'mainController', ['$scope','streamPanelService',
             $('.smart-col').addClass 'l12'
         else
             # horizontal orientation
-            $('.smart-col').addClass 'l12'
+            $('.smart-col').addClass 'l6'
 
     $scope.hashtag = ""
     streamPanelService.initialize().then (data)->

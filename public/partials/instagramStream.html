@@ -1,7 +1,7 @@
 <div ng-controller="instagramStreamController" class="section">
-    <div id="polaroid" class="center">
-            <div  ng-repeat="photo in data">
-            <a href="{{photo.link}}">
+    <div id="polaroid">
+            <div class="photo-div" ng-repeat="photo in data">
+            <a href="{{photo.link}}" target="_blank">
             <figure> 
                 <img class="responsive-img" ng-src="{{photo.images.standard_resolution.url}}"  alt="" /> 
                 <figcaption>{{photo.caption.text}}</figcaption>

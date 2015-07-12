@@ -22,12 +22,14 @@ figure, figcaption{ /*add any other html5 elements*/
     /*setting a width and adding overflow:hidden will clear the floats we're going to apply to figure*/
     width:100%;
     overflow:hidden;
+    padding: .5vw;
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    -ms-flex-direction: column;
+    -webkit-flex-flow: row wrap; 
+    flex-flow: row wrap; 
+    display: -webkit-box;
     display: flex;
-    flex-direction: row;
-    box-pack: center;
-    justify-content: center;
-    box-align: center;  
-    align-items: center;
 }
 
 #polaroid figure{
@@ -52,8 +54,14 @@ box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, .75);
 
 #polaroid figcaption{
 text-align: center;
-font-family: 'Reenie Beanie', cursive; /* Reenie Beanie is available through Google Webfonts */
-font-size:1.3em;
 color: #454f40;
 letter-spacing: 0.09em;
+}
+
+#polaroid .photo-div{
+    -webkit-box-flex: auto;
+    -ms-flex: auto;
+    flex: auto; 
+    width: 300px; 
+    //margin: .5vw;
 }
