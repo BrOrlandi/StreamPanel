@@ -16,6 +16,9 @@
     "materialize": "~0.97.0",
     "jquery": "~2.1.4",
     "angular": "~1.4.2",
-    "angular-socket-io": "~0.7.0"
+    "angular-socket-io": "~0.7.0",
+    "angular-timeago": "~0.1.12",
+    "angular-tweet-filter": "*",
+    "angular-sanitize": "~1.4.3"
   }
 }

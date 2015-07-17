@@ -4,13 +4,14 @@
     padding: 0px;
 }
 
+
+
+
 footer.page-footer {
-    bottom: 0px;
-    left: 0px;
-    position: fixed;
-    width: 100%;
     padding-top: 0px;
 }
+
+
 
 // instagram photos
 
@@ -24,18 +25,19 @@ figure, figcaption{ /*add any other html5 elements*/
     overflow:hidden;
     padding: .5vw;
     display: -ms-flexbox;
-    -ms-flex-wrap: wrap;
+    -ms-flex-wrap: wrap-reverse;
     -ms-flex-direction: column;
-    -webkit-flex-flow: row wrap; 
-    flex-flow: row wrap; 
+    -webkit-flex-flow: row-reverse wrap-reverse; 
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
     display: -webkit-box;
     display: flex;
+    justify-content: space-between;
 }
 
 #polaroid figure{
-float: left; /*places the images in a horizontal line*/
-position:relative; /*allows precise positioning of the tape in step 5- see support section below for more info*/
-width:300px; /* width of the images*/
+//float: left; /*places the images in a horizontal line*/
+//position:relative; /*allows precise positioning of the tape in step 5- see support section below for more info*/
 margin:5px 5px; /*space between the images*/
 }
 
@@ -55,13 +57,70 @@ box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, .75);
 #polaroid figcaption{
 text-align: center;
 color: #454f40;
-letter-spacing: 0.09em;
+letter-spacing: 0.07em;
+}
+
+.photo-date{
+    text-align: left;
+    float: left;
+}
+.photo-author{
+    text-align: right;
+    float: right;
+    color: #4578BB;
+}
+.photo-footer{
+    color: #454f40;
+    overflow: hidden;
 }
 
 #polaroid .photo-div{
     -webkit-box-flex: auto;
     -ms-flex: auto;
-    flex: auto; 
-    width: 300px; 
+    flex: auto;
+    width: 250px; 
     //margin: .5vw;
+}
+
+.max-lines {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 2.2em;
+  line-height: 1.1em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical; 
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.flow-text{
+    line-height: 1.2em;
+}
+
+.user_twitter{
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.tweet-time{
+    :hover{
+        text-decoration: underline;
+    }
+    position:absolute;
+    top: 8px;
+    right: 16px;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.collection .collection-item.avatar .circle {
+    top:15px;
+    width: auto;
+    max-width: 100%;
+    height: auto;
 }

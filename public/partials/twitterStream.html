@@ -1,0 +1,10 @@
+<div ng-controller="twitterStreamController" class="section">
+<ul ng-repeat="t in tweets" class="collection z-depth-1">
+    <li  class="collection-item avatar">
+      <a target="_blank" href="{{'https://twitter.com/'+t.user.screen_name}}"><img ng-src="{{t.user.profile_image_url}}" alt="{{t.user.name}}" class="circle responsive-img"></a>
+      <a target="_blank" class="user_twitter black-text" href="{{'https://twitter.com/'+t.user.screen_name}}"><span class="title"><span class="title bold">{{t.user.name}}</span>  <small class="grey-text text-darken-2">@{{t.user.screen_name}}</small></span></a>
+      <p class="flow-text" ng-bind-html="t.text | tweet"></p>
+      <a target="_blank" href="{{'https://twitter.com/'+t.user.screen_name+'/status/'+t.id_str}}" class="tweet-time grey-text text-darken-2">{{t.created_at | timeAgo}}</a>
+    </li>
+  </ul>
+</div>
