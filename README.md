@@ -1,6 +1,9 @@
 # Stream Panel
 > Stream Instagram photos and tweets tagged in real time.
 
+## Configuration
+The `config.coffee` file has all settings for Instagram and Twitter API and also the Hashtag to stream.
+
 ## Running
 Install dependencies
 

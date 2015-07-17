@@ -44,7 +44,9 @@ app.get '/hashtag', (req, res) ->
 # TWITTER PART
 
 tweet_filter = (t)->
-    t.source.indexOf('instagram') == -1 and
+    #console.log 'tweet_filter'
+    #console.log t
+    t.source?.indexOf('instagram') == -1 and
     typeof t.retweeted_status is 'undefined'
 
 twitter = new twitterAPI
