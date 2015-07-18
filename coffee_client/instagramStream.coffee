@@ -3,11 +3,11 @@ app = angular.module 'streamPanelApp'
 app.controller 'instagramStreamController', ['$scope','mySocket','instagramService', '$timeout',
 ($scope,mySocket,instagramService,$timeout) ->
 
-    $scope.data = []
+    $scope.photos = []
 
     updateAllPhotos = (min_tag_id)->
         instagramService.getPhotos(min_tag_id).then (data)->
-            $scope.data = data.reverse()
+            $scope.photos = data.reverse()
             applyTooltip()
 
     mySocket.on 'connect', ->
@@ -18,9 +18,9 @@ app.controller 'instagramStreamController', ['$scope','mySocket','instagramServi
 
     mySocket.on 'instagramUpdate', (_data)->
         instagramService.getPhotos().then (data)->
-            $scope.data.unshift item for item in data.reverse()
-            $scope.data.splice 15
-            $scope.data = $scope.data.reverse()
+            $scope.photos.unshift item for item in data.reverse()
+            $scope.photos.splice 15
+            $scope.photos = $scope.photos.reverse()
             applyTooltip()
 
     applyTooltip = ->

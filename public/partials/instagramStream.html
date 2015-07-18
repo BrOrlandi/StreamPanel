@@ -1,12 +1,12 @@
 <div ng-controller="instagramStreamController" class="section">
     <div id="polaroid">
-            <div class="photo-div" ng-repeat="photo in data">
+            <div class="photo-div" ng-repeat="photo in photos">
                 <a href="{{photo.link}}" target="_blank">
                     <figure>
                         <img class="responsive-img" ng-src="{{photo.images.standard_resolution.url}}"  alt="" /> 
                         <figcaption class="max-lines">{{photo.caption.text}}</figcaption>
                         <div class="photo-footer">
-                            <span class="photo-date tooltipped" data-position="top" data-delay="50" data-tooltip="{{ photo.caption.created_time*1000 | date : 'short' }}">{{photo.caption.created_time*1000 | timeAgo}}</span>
+                            <span class="photo-date tooltipped" data-position="top" data-delay="50" data-tooltip="{{ photo.caption.created_time*1000 | date : 'short' }}"><time-ago from-time="{{ photo.caption.created_time*1000 }}"></time-ago></span>
                             <span class="photo-author tooltipped" data-position="top" data-delay="50" data-tooltip="@{{photo.user.username}}">{{photo.user.full_name}}</span>
                         </div>
                     </figure>
