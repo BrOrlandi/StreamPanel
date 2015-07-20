@@ -18,9 +18,8 @@ app.controller 'instagramStreamController', ['$scope','mySocket','instagramServi
 
     mySocket.on 'instagramUpdate', (_data)->
         instagramService.getPhotos().then (data)->
-            $scope.photos.unshift item for item in data.reverse()
+            $scope.photos.push item for item in data
             $scope.photos.splice 15
-            $scope.photos = $scope.photos.reverse()
             applyTooltip()
 
     applyTooltip = ->

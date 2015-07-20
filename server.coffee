@@ -20,7 +20,7 @@ io.on 'connection', (socket)->
 
     twitter.get 'search/tweets', 
         q: '#'+config.HASHTAG
-        result_type: 'recent'
+        #result_type: 'recent'
         count: 15
         include_entities: false
         , (error, tweets, response) ->
