@@ -1,0 +1,119 @@
+/* line 2, stdin */
+.col {
+  width: 100%;
+  padding: 0px; }
+
+/* line 10, stdin */
+footer.page-footer {
+  padding-top: 0px; }
+
+/* line 18, stdin */
+figure, figcaption {
+  /*add any other html5 elements*/
+  display: block; }
+
+/* line 22, stdin */
+#polaroid {
+  /*setting a width and adding overflow:hidden will clear the floats we're going to apply to figure*/
+  width: 100%;
+  overflow: hidden;
+  padding: .5vw;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap-reverse;
+  -ms-flex-direction: column;
+  -webkit-flex-flow: row-reverse wrap-reverse;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-between; }
+
+/* line 38, stdin */
+#polaroid figure {
+  margin: 5px 5px;
+  /*space between the images*/ }
+
+/* line 44, stdin */
+#polaroid figure {
+  padding: 6px 8px 10px 8px;
+  /*size of the frame*/
+  /*give the frame's background colour a gradient*/
+  background: #eee6d8;
+  /*fallback colour for browsers that don't support gradients*/
+  background: -webkit-linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+  background: -moz-linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+  background: -o-linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+  background: -ms-linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+  background: linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+  /*give the Polaroids a small drop shadow*/
+  box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, 0.75); }
+
+/* line 57, stdin */
+#polaroid figcaption {
+  text-align: center;
+  color: #454f40;
+  letter-spacing: 0.07em; }
+
+/* line 63, stdin */
+.photo-date {
+  text-align: left;
+  float: left; }
+
+/* line 67, stdin */
+.photo-author {
+  text-align: right;
+  float: right;
+  color: #4578BB; }
+
+/* line 72, stdin */
+.photo-footer {
+  color: #454f40;
+  overflow: hidden; }
+
+/* line 77, stdin */
+#polaroid .photo-div {
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  width: 250px; }
+
+/* line 85, stdin */
+.max-lines {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 2.2em;
+  line-height: 1.1em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical; }
+
+/* line 95, stdin */
+.bold {
+  font-weight: bold; }
+
+/* line 99, stdin */
+.flow-text {
+  line-height: 1.2em; }
+
+/* line 104, stdin */
+.user_twitter:hover {
+  text-decoration: underline; }
+
+/* line 109, stdin */
+.tweet-time {
+  position: absolute;
+  top: 8px;
+  right: 16px; }
+  /* line 110, stdin */
+  .tweet-time :hover {
+    text-decoration: underline; }
+  /* line 116, stdin */
+  .tweet-time:hover {
+    text-decoration: underline; }
+
+/* line 121, stdin */
+.collection .collection-item.avatar .circle {
+  top: 15px;
+  width: auto;
+  max-width: 100%;
+  height: auto; }
