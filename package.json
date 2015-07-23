@@ -7,6 +7,10 @@
     "stream",
     "panel"
   ],
+  "scripts":{
+    "postinstall": "gulp compile",
+    "start": "node server.js"
+    },
   "author": "Bruno Orlandi <brorlandi@gmail.com>",
   "devDependencies": {
     "coffee-script": "^1.9.3",

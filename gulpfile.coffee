@@ -16,7 +16,7 @@ outputDir = 'public'
 
 paths = 
     scripts: 'coffee_client/**/*.coffee'
-    styles: 'sass/**/*.scss'
+    styles: 'sass/main.scss'
     server: ['*.coffee', '!gulpfile.coffee']
 
 gulp.task 'clean_styles', (cb)->
@@ -61,3 +61,4 @@ gulp.task 'watch', ->
     gulp.watch paths.server, ['server']
 
 gulp.task 'default', ['scripts','styles','server','watch']
+gulp.task 'compile', ['scripts','styles','server']
