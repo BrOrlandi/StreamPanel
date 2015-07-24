@@ -61,4 +61,4 @@ gulp.task 'watch', ->
     gulp.watch paths.server, ['server']
 
 gulp.task 'default', ['scripts','styles','server','watch']
-gulp.task 'compile', ['scripts','styles','server']
+gulp.task 'compile', ['scripts','server']

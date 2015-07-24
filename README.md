@@ -10,9 +10,9 @@ Install dependencies
     npm install 
     bower install
 
-This project uses Gulp to run tasks. Run Gulp to compile CoffeeScript and Sass files and watch for modifications.
+This project uses Gulp to run tasks. Run Gulp to compile CoffeeScript and Sass files.
     
-    gulp
+    gulp compile
 Finnaly you can run the application.
     
     node server.js
