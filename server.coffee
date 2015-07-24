@@ -63,7 +63,7 @@ twitter.stream 'statuses/filter',
             io.emit 'newTweet', tweet
 
       stream.on 'error', (error)->
-        throw error
+        console.error error
 
 # END OF TWITTER
 
