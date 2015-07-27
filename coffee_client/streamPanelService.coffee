@@ -6,7 +6,7 @@ app.factory 'streamPanelService', ['$http','$q', ($http,$q)->
 
     initialize: ->
         defer = $q.defer()
-        $http.get('/hashtag').success (data)->
+        $http.get('./hashtag').success (data)->
             hashtag = data
             defer.resolve(hashtag)
         defer.promise
