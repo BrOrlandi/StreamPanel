@@ -39,7 +39,7 @@ app.factory 'instagramService', ['$http','$q','streamPanelService', ($http,$q,st
 
     getClient = ->
         defer = $q.defer()
-        $http.get('/instagram_client').success (data)->
+        $http.get('./instagram_client').success (data)->
             client_id = data
             defer.resolve()
         defer.promise
