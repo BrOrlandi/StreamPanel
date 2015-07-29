@@ -13,7 +13,7 @@ instagram.set 'callback_url', config.INSTAGRAM_CALLBACK_URL
 
 app = express()
 server = require('http').createServer(app)
-io = require('socket.io').listen(server)
+io = require('socket.io').listen(server, path: "/StreamPanel/socket.io")
 
 io.on 'connection', (socket)->
     console.log "New socket connected #{socket.id}"

@@ -1,7 +1,7 @@
 exports.HASHTAG = 'JavaScript'
 
 exports.INSTAGRAM_CLIENT_ID = 'f9707cce1f224430bf9d5b4bfef40bae'
-exports.INSTAGRAM_CLIENT_SECRET = '480328c7a1114221be5e495e8d998a8d'
+exports.INSTAGRAM_CLIENT_SECRET = '0a424402efe649c3b98b10f9241195f9'
 exports.INSTAGRAM_CALLBACK_URL = 'https://xmkwivjbkb.localtunnel.me/instagram_callback'
 
 exports.TWITTER_CONSUMER_KEY = 'F6HXddrznkbS99xfqKOFaikNl'
